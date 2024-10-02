@@ -23,6 +23,7 @@
                             <option value="" selected>Pilih Kategori</option>
                             <option value="Novel">Novel</option>
                             <option value="Biografi">Biografi</option>
+                            <option value="Komik">Komik</option>
                         </select>
                         @error('kategori') <div class="invalid-feedback">{{ $message }}</div> @enderror
                     </div>
@@ -30,7 +31,7 @@
                         <label for="sampul" class="form-label">Sampul buku</label>
                         <img id="img-preview" class="img-fluid mb-3 w-25px" style="display:none">
                         <input class="form-control @error('sampul') is-invalid @enderror" 
-                               type="file" id="sampul" name="sampul" onchange="previewImage()">
+                                type="file" id="sampul" name="sampul" onchange="previewImage()">
                         @error('sampul') <div class="invalid-feedback">{{ $message }}</div> @enderror
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
