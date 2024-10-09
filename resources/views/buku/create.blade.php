@@ -7,13 +7,13 @@
                     <div class="mb-3">
                         <label for="judul" class="form-label">Judul</label>
                         <input type="text" class="form-control @error('judul') is-invalid @enderror" 
-                               value="{{ old('judul') }}" id="judul" name="judul">
+                                value="{{ old('judul') }}" id="judul" name="judul">
                         @error('judul') <div class="invalid-feedback">{{ $message }}</div> @enderror
                     </div>
                     <div class="mb-3">
                         <label for="penulis" class="form-label">Penulis</label>
                         <input type="text" class="form-control @error('penulis') is-invalid @enderror" 
-                               value="{{ old('penulis') }}" id="penulis" name="penulis">
+                            value="{{ old('penulis') }}" id="penulis" name="penulis">
                         @error('penulis') <div class="invalid-feedback">{{ $message }}</div> @enderror
                     </div>
                     <div class="mb-3">
